@@ -45,6 +45,14 @@ DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://TGx:TGx@cluster0.xhbr4
 DATABASE_NAME = environ.get('DATABASE_NAME', "TGxMULTIBOT")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
+# FSUB
+auth_channel = environ.get('AUTH_CHANNEL', '-1001969884793')
+AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
+# Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
+REQ_CHANNEL = environ.get("REQ_CHANNEL", '-1001848614803')
+REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else False
+JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
+
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shorturllink.in')
