@@ -18,7 +18,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = "28643132"
 API_HASH = "510c3009ea589830a89e045bf8aae656"
-BOT_TOKEN = "6265066049:AAEr6nIxmjAeZqDHDFSOZQwAuFbCmupjX0o"
+BOT_TOKEN = "6082622299:AAG50jDqP92qn96vb7cJ7OviW5-oT44pG3k"
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -44,8 +44,8 @@ REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://TG:TG@cluster0.2tbyorh.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "TG_FilmBot")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://TGx:TGx@cluster0.xhbr4k4.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "TGxMULTIBOT")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # FSUB
