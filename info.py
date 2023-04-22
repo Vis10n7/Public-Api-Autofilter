@@ -18,7 +18,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = "28643132"
 API_HASH = "510c3009ea589830a89e045bf8aae656"
-BOT_TOKEN = "6082622299:AAG50jDqP92qn96vb7cJ7OviW5-oT44pG3k"
+BOT_TOKEN = "6220379802:AAG46QrzQnkDtNDlPyl5eu-FGI_pzj-n2mw"
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -33,7 +33,7 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/f7f2a532fe4b9900
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5977113116').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001660042792 -1001541833234').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001732106901').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_grp = environ.get('AUTH_GROUP')
@@ -49,10 +49,10 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "TGxMULTIBOT")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # FSUB
-auth_channel = environ.get('AUTH_CHANNEL', '-1001969884793')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001732106901')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 # Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
-REQ_CHANNEL = environ.get("REQ_CHANNEL", '-1001848614803')
+REQ_CHANNEL = environ.get("REQ_CHANNEL", '-1001732106901')
 REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else False
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 
@@ -66,12 +66,12 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "7")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/MLZ_BOTZ_SUPPORT')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/MLZ_BOTZ')
-MAIN_CHNL = environ.get('MAIN_CHNL', 'https://t.me/CKTalkies')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/sks_support_group')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/sks_support_group')
+MAIN_CHNL = environ.get('MAIN_CHNL', 'https://t.me/sks_support_group')
 MSG_ALRT = environ.get('MSG_ALRT', '❓')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001854284651'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'MLZ_BOTZ_SUPPORT')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001732106901'))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'sks_support_group')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False) 
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
