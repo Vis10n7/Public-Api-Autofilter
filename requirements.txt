@@ -9,7 +9,6 @@ bs4
 git+https://github.com/Joelkb/cinemagoer
 datetime
 pytz
-aiohttp
 python-dotenv
 Flask==2.2.2
 gunicorn==20.1.0
